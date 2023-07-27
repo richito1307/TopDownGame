@@ -126,3 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   damage: 1
+  floatDamage: {fileID: 9208004096382066810, guid: b7f57477f504ba64ca496fed69205ae3, type: 3}

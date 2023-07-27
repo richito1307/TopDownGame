@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8339899185285265470}
   - component: {fileID: 8339899185285265471}
   - component: {fileID: 8339899185285265464}
+  - component: {fileID: 8118968542519165924}
   m_Layer: 0
   m_Name: Spawner-Nave espacial
   m_TagString: Enemy
@@ -148,7 +149,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 8339899185285265459}
-  enemy: {fileID: 8817082473305341615, guid: ff4ccde2231f7b84dbe2457b8d13adfb, type: 3}
+  enemy1: {fileID: 7847761930824158731, guid: e74881c68650599459779d0e3f51791c, type: 3}
+  enemy2: {fileID: 8817082473305341615, guid: ff4ccde2231f7b84dbe2457b8d13adfb, type: 3}
+  enemy3: {fileID: 7060597549752933947, guid: 4db8fdae8585cef4b949ffa3290d87c4, type: 3}
 --- !u!114 &8339899185285265464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +164,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91fac8dda530e54f86621fbb247998e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaxima: 10
-  vidaActual: 10
-  xp: {fileID: 4503966077729156436, guid: e7865b52267739446ac91c40f803ab15, type: 3}
+  vidaMaxima: 30
+  vidaActual: 30
+  drop: {fileID: 4503966077729156436, guid: 59a8580f674e9604498c0713808efa7f, type: 3}
+--- !u!114 &8118968542519165924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8339899185285265465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45816492f6c8a9d4aa65af98657e3166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyDamage: 0.1
