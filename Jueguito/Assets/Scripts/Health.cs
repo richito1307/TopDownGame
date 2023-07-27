@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] public float vidaMaxima = 10f;
     [SerializeField] public float vidaActual;
-    [SerializeField] private GameObject xp;
+    [SerializeField] private GameObject drop;
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class Health : MonoBehaviour
         {
             vidaActual = 0;
             Vector3 actualPosition = transform.position;
-            GameObject xpFall = Instantiate(xp, actualPosition, Quaternion.identity);
+            GameObject xpFall = Instantiate(drop, actualPosition, Quaternion.identity);
             Destroy(gameObject);
         }
         else if (vidaActual > vidaMaxima)

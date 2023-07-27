@@ -102,7 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 5382583010190929791}
-  enemy: {fileID: 7060597549752933947, guid: 4db8fdae8585cef4b949ffa3290d87c4, type: 3}
+  enemy1: {fileID: 0}
+  enemy2: {fileID: 0}
+  player: {fileID: 2949143105664123521, guid: e822f43d5cef46c4fa9ae365e66cf277, type: 3}
 --- !u!114 &-6971786723140937943
 MonoBehaviour:
   m_ObjectHideFlags: 0

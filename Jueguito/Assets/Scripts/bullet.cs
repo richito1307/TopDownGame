@@ -6,6 +6,7 @@ public class bullet : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float damage;
+    [SerializeField] private GameObject floatDamage;
 
     private void Update()
     {
@@ -19,10 +20,11 @@ public class bullet : MonoBehaviour
             Health vidaEnemigo = other.GetComponent<Health>();
             if (vidaEnemigo != null)
             {
-                vidaEnemigo.UpdateHealth(-damage);
-                Debug.Log(vidaEnemigo.vidaActual);
+                GameObject points = Instantiate(floatDamage, transform.position, Quaternion.identity) as GameObject;
+                points.transform.GetChild(0).GetComponent<TextMesh>().text = damage.ToString();
+                vidaEnemigo.UpdateHealth(-damage); 
             }
-                Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
