@@ -8,6 +8,9 @@ public class Lazer : MonoBehaviour
     private Color targetColor = new Color(1f, 1f, 1f, 1f); // Color con opacidad máxima (alfa = 1)
     public float delay1 = 2f; // Retraso inicial en segundos
     public float delay2 = 1f; // Retraso final en segundos 
+    public AudioSource sonido;
+    
+
 
     void Start()
     {
@@ -21,6 +24,11 @@ public class Lazer : MonoBehaviour
     {
         // Esperar 2 segundos antes de aumentar la opacidad y activar el BoxCollider2D
         yield return new WaitForSeconds(delay1);
+
+        if (sonido != null)
+        {
+            sonido.Play();
+        }
 
         // Aumentar la opacidad a 255 de golpe y activar el BoxCollider2D
         spriteRenderer.color = targetColor;

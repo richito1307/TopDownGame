@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Pollo
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 1866906896, guid: f484f1037fde3254a882ff876ec9912d, type: 3}
+  - {fileID: -1305024653, guid: f484f1037fde3254a882ff876ec9912d, type: 3}
+  - {fileID: 1961035459, guid: f484f1037fde3254a882ff876ec9912d, type: 3}
+  - {fileID: -174730625, guid: f484f1037fde3254a882ff876ec9912d, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
