@@ -24,9 +24,7 @@ public class Level : MonoBehaviour
     public void GainExperience(float amount)
     {
         experience += amount;
-        Debug.Log("Ganaste " + amount + " experiencia.");
         xpBar.fillAmount = experience / experienceRequired;
-        Debug.Log(experience/experienceRequired);
 
         if (experience >= experienceRequired)
         {
