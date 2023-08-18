@@ -9,8 +9,6 @@ public class Lazer : MonoBehaviour
     public float delay1 = 2f; // Retraso inicial en segundos
     public float delay2 = 1f; // Retraso final en segundos 
     public AudioSource sonido;
-    
-
 
     void Start()
     {
