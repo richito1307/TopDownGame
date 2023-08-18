@@ -10,7 +10,7 @@ public class player_motion : MonoBehaviour
     [SerializeField] private VariableJoystick joystick;
     [SerializeField] private Rigidbody2D rb2D;
     [SerializeField] private Button button;
-
+    [SerializeField] public AudioSource audioDash;
     private bool isDashing = false;
     private float dashTimer = 0f;
     private float cooldownTimer = 0f;
@@ -55,6 +55,11 @@ public class player_motion : MonoBehaviour
 
             // Iniciar el cooldown
             cooldownTimer = dashCooldown;
+
+            if (audioDash != null)
+            {
+                audioDash.Play(); 
+            }
         }
     }
 
@@ -66,8 +71,14 @@ public class player_motion : MonoBehaviour
         animator.SetFloat("MovimientoX", movimientoHorizontal);
         animator.SetFloat("MovimientoY", movimientoVertical);
 
+        if (movimientoHorizontal != 0 || movimientoVertical != 0)
+        {
+            animator.SetFloat("UltimoX", movimientoHorizontal);
+            animator.SetFloat("UltimoY", movimientoVertical);
+        }
         movimiento = new Vector2(movimientoHorizontal, movimientoVertical).normalized;
         rb2D.velocity = movimiento * motionSpeed;
+
     }
 
     private void StartDash()

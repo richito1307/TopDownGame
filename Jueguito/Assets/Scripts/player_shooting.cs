@@ -15,6 +15,8 @@ public class player_shooting : MonoBehaviour
     [SerializeField] private int disparosRealizados = 0; //Numero actual de disparos realizados
     private bool enRecarga = false;
     [SerializeField] public Image recarga;
+    [SerializeField] public AudioSource sonidoDisparo;
+
 
     private void FixedUpdate()
     {
@@ -45,6 +47,11 @@ public class player_shooting : MonoBehaviour
 
                 float progresoPorBala = 1f / disparosAntesRecarga;
                 recarga.fillAmount -= progresoPorBala;
+
+                if (sonidoDisparo != null)
+                {
+                    sonidoDisparo.Play();
+                }
             }
         }
         else

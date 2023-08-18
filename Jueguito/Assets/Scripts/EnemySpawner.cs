@@ -27,9 +27,7 @@ public class EnemySpawner : MonoBehaviour
         while (true)
         {
             Vector2 randomCirclePos = Random.insideUnitCircle.normalized * spawnRadius;
-            Debug.Log(randomCirclePos);
             Vector3 spawnPosition = player.transform.position + new Vector3(randomCirclePos.x, randomCirclePos.y, 0f).normalized * spawnDistance;
-            Debug.Log(spawnPosition);
 
             int randomEnemyType = Random.Range(0, 3); // Genera un número aleatorio entre 0 y 2
 

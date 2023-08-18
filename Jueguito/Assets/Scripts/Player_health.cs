@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,8 @@ public class Player_health : MonoBehaviour
     [SerializeField] public float vidaMaxima = 10f;
     [SerializeField] public float vidaActual;
     [SerializeField] public Image healthBar;
+
+    public event EventHandler MuerteJugador;
 
     private void Start()
     {
@@ -22,6 +25,7 @@ public class Player_health : MonoBehaviour
         if (vidaActual <= 0)
         {
             vidaActual = 0;
+            MuerteJugador?.Invoke(this, EventArgs.Empty);
             Destroy(gameObject);
         }
         else if (vidaActual > vidaMaxima)

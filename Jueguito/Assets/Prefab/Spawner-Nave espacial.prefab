@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 8339899185285265468}
   - component: {fileID: 8339899185285265469}
   - component: {fileID: 8339899185285265470}
-  - component: {fileID: 8339899185285265471}
   - component: {fileID: 8339899185285265464}
   - component: {fileID: 8118968542519165924}
-  m_Layer: 0
+  - component: {fileID: 7278286767185212198}
+  m_Layer: 6
   m_Name: Spawner-Nave espacial
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: cdf124f71c6f18244889c8b8ea20b121, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -136,22 +136,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8339899185285265471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8339899185285265465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 639534a84937ac04d9772d31ebec36e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawn: {fileID: 8339899185285265459}
-  enemy1: {fileID: 7847761930824158731, guid: e74881c68650599459779d0e3f51791c, type: 3}
-  enemy2: {fileID: 8817082473305341615, guid: ff4ccde2231f7b84dbe2457b8d13adfb, type: 3}
-  enemy3: {fileID: 7060597549752933947, guid: 4db8fdae8585cef4b949ffa3290d87c4, type: 3}
 --- !u!114 &8339899185285265464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +164,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 0.1
+--- !u!114 &7278286767185212198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8339899185285265465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639534a84937ac04d9772d31ebec36e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 8339899185285265459}
+  enemy1: {fileID: 7847761930824158731, guid: e74881c68650599459779d0e3f51791c, type: 3}
+  enemy2: {fileID: 5242571124105817413, guid: e5933f7bb1549b34cb9fafbf3af922cb, type: 3}
+  enemy3: {fileID: 7060597549752933947, guid: 4db8fdae8585cef4b949ffa3290d87c4, type: 3}
