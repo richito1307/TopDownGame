@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91fac8dda530e54f86621fbb247998e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaxima: 30
-  vidaActual: 30
+  vidaMaxima: 15
+  vidaActual: 15
   drop: {fileID: 4503966077729156436, guid: 59a8580f674e9604498c0713808efa7f, type: 3}
 --- !u!114 &8118968542519165924
 MonoBehaviour:
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45816492f6c8a9d4aa65af98657e3166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDamage: 0.1
+  enemyDamage: 0.05
 --- !u!114 &7278286767185212198
 MonoBehaviour:
   m_ObjectHideFlags: 0

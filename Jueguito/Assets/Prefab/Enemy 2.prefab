@@ -165,8 +165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2949143105664123572, guid: e822f43d5cef46c4fa9ae365e66cf277, type: 3}
-  speed: 20
-  rotationSpeed: 400
+  speed: 10
+  rotationSpeed: 200
 --- !u!114 &-5090760243879809991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1363a5a61e388ef4aa361e09522cc787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoDeEspera: 5
+  tiempoDeEspera: 3
 --- !u!114 &5402393596033792836
 MonoBehaviour:
   m_ObjectHideFlags: 0

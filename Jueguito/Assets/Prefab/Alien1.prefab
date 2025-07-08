@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 1.5
+  speed: 1
   animator: {fileID: 0}
 --- !u!114 &4874290589860717165
 MonoBehaviour:
@@ -239,8 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91fac8dda530e54f86621fbb247998e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaxima: 5
-  vidaActual: 5
+  vidaMaxima: 1
+  vidaActual: 1
   drop: {fileID: 4503966077729156436, guid: e7865b52267739446ac91c40f803ab15, type: 3}
 --- !u!114 &8726779148952265997
 MonoBehaviour:
